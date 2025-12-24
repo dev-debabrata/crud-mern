@@ -1,6 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import PostIndex from "./components/PostIndex";
+
 function App() {
   return (
-    <div>App</div>
+    <>
+      <Routes>
+        <Route path="/" element={<PostIndex />} />
+      </Routes>
+    </>
   );
 }
 
