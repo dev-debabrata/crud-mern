@@ -64,7 +64,7 @@ export const updateEmployee = async (req, res) => {
             payload,
             {
                 new: true,
-                runValidators: true, // 🔥 VERY IMPORTANT
+                runValidators: true,
             }
         );
 
