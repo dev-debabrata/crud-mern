@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Eye, Pencil, Trash2, ChevronUp, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { Eye, Pencil, Trash2, ChevronLeft, ChevronRight, ArrowDown, ArrowUp } from "lucide-react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 import EmployeeForm from "../components/EmployeeForm";
@@ -142,12 +142,12 @@ const EmployeePage = () => {
                                     onClick={toggleSortOrder}
                                     className="px-3 py-2 text-left cursor-pointer select-none"
                                 >
-                                    <div className="flex flex-col items-start">
+                                    <div className="flex items-center gap-1">
                                         <span>ID</span>
                                         {sortOrder === "asc" ? (
-                                            <ChevronUp size={14} />
+                                            <ArrowUp size={14} />
                                         ) : (
-                                            <ChevronDown size={14} />
+                                            <ArrowDown size={14} />
                                         )}
                                     </div>
                                 </th>
